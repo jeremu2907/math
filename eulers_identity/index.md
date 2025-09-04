@@ -78,3 +78,5 @@ e^{i\pi} &= -1 \\
 e^{i\pi} + 1 &= 0
 \end{aligned}
 $$
+
+Quod Erat Demonstrandum
