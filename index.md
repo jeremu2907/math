@@ -8,7 +8,7 @@ Euler's identity
 $$e^{i\pi} + 1 = 0$$
 links five fundamental mathematical constants — $0$, $1$, $e$, $i$, and $\pi$ — in a single, simple formula, showing a deep connection between exponentials, complex numbers, and trigonometry.
 
-**[Read more here $\rightarrow$](eulers_identity/index.html)**
+**[$\rightarrow$ Read more here](eulers_identity/index.html)**
 
 ### Nth Order Homogeneous ODE With Constant Coefficient Solution
 A derivation of the general solution to the differential equation of the form:
@@ -17,6 +17,6 @@ $a_i \in \mathbb{R}$
 $y^{(k)}$ is the $k^{th}$ derivative of $y$
 $y^{(0)} = y$
 
-**[Read more here $\rightarrow$](ode_nth_order_homogeneous/index.html)**
+**[$\rightarrow$ Read more here](ode_nth_order_homogeneous/index.html)**
 
 ## Physics
