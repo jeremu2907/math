@@ -90,9 +90,10 @@ i_{C} &= C\frac{d}{dt}v \\
 i_{C} &= C\frac{d}{dt}\left[\frac{I_{0}}{C\omega}\sin{(wt)}\right] \\
 \\
 i_{C} &= C\frac{I_{0}\omega}{C\omega}\cos{(wt)} \\
+\\
 i_{C} &= I_{0}\cos{(wt)} \\
 \end{aligned}
 $$
 
 #### 4. Graphing the LC Circuit Natural Response
-![alt text](image-2.png)
+![alt text](image-3.png)

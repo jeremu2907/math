@@ -23,4 +23,6 @@ $y^{(0)} = y$
 ### Natural Response of a Series LC Circuit
 This section derives the natural response of a series LC circuit, showing how voltage and current oscillate sinusoidally at the natural frequency due to energy exchange between the inductor and capacitor.
 
+![alt text](rc_circuit_natural_response/image-3.png)
+
 **[$\rightarrow$ Read more here](rc_circuit_natural_response/index.html)**
