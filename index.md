@@ -19,4 +19,8 @@ $y^{(0)} = y$
 
 **[$\rightarrow$ Read more here](ode_nth_order_homogeneous/index.html)**
 
-## Physics
+## Circuits
+### Natural Response of a Series LC Circuit
+This section derives the natural response of a series LC circuit, showing how voltage and current oscillate sinusoidally at the natural frequency due to energy exchange between the inductor and capacitor.
+
+**[$\rightarrow$ Read more here](rc_circuit_natural_response/index.html)**

@@ -1,3 +1,4 @@
+[$\leftarrow$ Back](../index.html)
 ### LC Circuit Natural Response
 ![alt text](image-1.png)
 
