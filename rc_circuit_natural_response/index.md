@@ -53,7 +53,6 @@ Since the two components, L and C, are connected in series, the current are equa
 
 $$i_{L} = i_{C}$$
 
-#### 3. Solving for $v(t)$
 Replacing $i$ with expressions containing $v$ obtained from [1.1](#11-inductor) and [1.2](#12-capacitor)
 $$
 \begin{aligned}
@@ -70,6 +69,7 @@ v'' + \frac{1}{LC}v &= 0 \\
 \end{aligned}
 $$
 
+#### 3. Solving for $v(t)$
 Solving this yields:
 
 $$
