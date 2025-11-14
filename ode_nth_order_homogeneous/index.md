@@ -11,7 +11,7 @@ $a_i \in \mathbb{R}$
 $y^{(k)}$ is the $k^{th}$ derivative of $y$
 $y^{(0)} = y$
 
-#### 2. Let $\mu$ be a function, assume a special property that $y^{(n)}$ has:
+#### 2. Let $\mu$ be a function, assume a special property that $y^{(n)}$ has: {#section2}
 
 $$
 \begin{aligned}
@@ -23,7 +23,7 @@ y^{(n)} &= \mu \ y^{(n-1)} \\
 \end{aligned}
 $$
 
-#### 3. It follows that the ODE can be rewritten:
+#### 3. It follows that the ODE can be rewritten: {#section3}
 
 $$
 \begin{aligned}
@@ -38,7 +38,7 @@ $$\mu = a \pm bi, \qquad a,b \in \mathbb{R}$$
 
 #### 4. Solving for y
 
-Since the ODE is in terms of $y$ from section [3](#3._It_follows_that_the_ODE-can_be_rewritten:), assuming the n solutions for $\mu$, and implied from section [2](#2-let--be-a-function-assume-a-special-property-that--has), $\mu$ is a coefficient of the separable differential equation:
+Since the ODE is in terms of $y$ from section [3](#section3), assuming the n solutions for $\mu$, and implied from section [2](#section2), $\mu$ is a coefficient of the separable differential equation:
 
 $$
 \begin{aligned}
