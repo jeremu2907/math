@@ -111,6 +111,6 @@ For a n-degree polynomial, the general solution for all $\mu$ is a linear combin
 
 $$
 \begin{aligned}
-y &= \sum_{k = 1}^{n}{C_{k1}e^{a_{k}x}\cos(b_{k}x) + C_{k2}e^{a_{k}x}\sin(b_{k}x)}
+y &= \sum_{k = 1}^{n}{C_{k,1}e^{a_{k}x}\cos(b_{k}x) + C_{k,2}e^{a_{k}x}\sin(b_{k}x)}
 \end{aligned}
 $$
