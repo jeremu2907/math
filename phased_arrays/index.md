@@ -49,7 +49,7 @@ This is called the **time difference of arrival** equation for a two-element pha
 
 #### Beam Steering
 
-Phased array applies a phase shift to am incoming or outgoing signal to antenna elements to steer the beam to the desired location.
+Phased array applies a phase shift to an incoming or outgoing signal to antenna elements to steer the beam to the desired location.
 
 We will calculate the phase shift, $\phi$, applied to each antenna so that it can steer a transmission beam to an angle $\theta$. A quantity we know before transmitting is the frequency of the wave, $f$.
 
@@ -113,3 +113,4 @@ $$
 $$
 
 This is the **ULA steering law**.
+
