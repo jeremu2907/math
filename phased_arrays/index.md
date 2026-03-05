@@ -113,4 +113,3 @@ $$
 $$
 
 This is the **ULA steering law**.
-

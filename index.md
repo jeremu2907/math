@@ -1,12 +1,11 @@
 # Math & Physics Stuff
 I document things I derived in my learning journey.
 
-## Math
+## Mathematics
 
 ### Euler's Formula & Identity
-Euler's identity
+Using ODE to derive the generalized Euler's formula and the famous Euler's identity:
 $$e^{i\pi} + 1 = 0$$
-links five fundamental mathematical constants — $0$, $1$, $e$, $i$, and $\pi$ — in a single, simple formula.
 
 **[$\rightarrow$ Read more here](eulers_identity/index.html)**
 
@@ -25,7 +24,8 @@ $$
 
 **[$\rightarrow$ Read more here](ode_nth_order_homogeneous/index.html)**
 
-## Physics
+## Physics and Engineering
+
 ### Natural Response of a Series LC Circuit
 This section derives the natural response of a series LC circuit, showing how voltage and current oscillate sinusoidally at the natural frequency due to energy exchange between the inductor and capacitor.
 
@@ -45,3 +45,10 @@ using a simple two-element antenna array set up and far field EM wave approximat
 ![alt text](phased_arrays/image.png)
 
 **[$\rightarrow$ Read more here](phased_arrays/index.html)**
+
+### IQ Sampling Circuit Analysis
+This secion examines the exact operations that each cicuit component applies to an RF signal to produce IQ data.
+
+![alt text](./iq_sampling/image.png)
+
+**[$\rightarrow$ Read more here](./iq_sampling/index.html)**
