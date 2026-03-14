@@ -1,6 +1,22 @@
-# Math & Physics Stuff
-I document things I derived in my learning journey.
+# Technical Notes
+Jeremy Huynh
+___
+## Introduction
+I kinda don't like that many learning sources never explain where a formula came from. *"Just plug the numbers in"* is the bane of my existence. If you ever feel the same way, you would understand my motivation. This site contains personal technical analysis of topics in engineering and physics as well as mathematical derivations. The purpose of this site is to define a problem and use fundamental mathematical principles to solve it, explaining the "*Where it came from*".
 
+*This site is my passion manifested.*
+
+___
+## Content
+- [Mathematics](#mathematics)
+    - [Euler's Formula & Identity](#eulers-formula--identity)
+    - [Solution to Nth Order Homogeneous ODE With Constant Coefficient](#nth-order-homogeneous-ode-with-constant-coefficient-solution)
+- [Physics & Engineering](#physics-and-engineering)
+    - [Natural Response of a Series LC Circuit](#natural-response-of-a-series-lc-circuit)
+    - [Phased Arrays](#phased-arrays)
+    - [IQ Sampling Circuit Analysis](#iq-sampling-circuit-analysis)
+
+___
 ## Mathematics
 
 ### Euler's Formula & Identity
@@ -24,6 +40,7 @@ $$
 
 **[$\rightarrow$ Read more here](ode_nth_order_homogeneous/index.html)**
 
+___
 ## Physics and Engineering
 
 ### Natural Response of a Series LC Circuit
