@@ -62,7 +62,9 @@ ___
 
 #### Mean IQ Power Relation to RX Voltage
 Given a signal, its mean unitless power in terms of its IQ samples is
-$$P_\text{mean} = \frac{1}{N}\sum_{i=1}^{N}{I[i]^2 + Q[i]^2} \\$$
+$$
+P_\text{mean} = \frac{1}{N}\sum_{i=1}^{N}{I[i]^2 + Q[i]^2}
+$$
 
 Along with the signal's [absolute power](#rx-voltage), it can be observed that
 $$P \propto P_\text{mean}$$
@@ -79,7 +81,7 @@ which estimates the RX voltage at the antenna given a mean IQ power $\rho$.
 The only way to meaningfully do this is to conduct data collection with specific hardware, for a specific setup. The following hardware and configurations are used:
 - $P = 2\text{W}$ [Pxton Radio](https://a.co/d/03fpEvGm)
 - $D = 3.28, z = 50 \Omega$ [Disco32 Monopole Blade Antennas ](https://disco32.com/collections/antennas/products/short-blade-antenna-30-512mhz)
-- LimeSDR v2.4
+- LimeSDR Mini v2.4
 - Center frequency $f = 470 \text{MHz}$
 - Bandwidth $= 2.4 \text{MHz}$
 
@@ -115,7 +117,25 @@ It can be observed that the unitless mean IQ power and voltage squared follows a
 
 ![alt text](image.png)
 
-Using a second degree polynomial regression for this data yields
+___
+**BEGIN VERY IMPORTANT DISCLAIMER**
+
+Because the SDR front-end contains nonlinear analog components (LNA, mixer, and ADC), the measured IQ power does not scale perfectly linearly with the RX voltage$^2$, which is implied [above](#mean-iq-power-relation-to-rx-voltage).
+
+For the specific hardware configuration used in this experiment, the empirical data is well approximated by a quadratic regression:
+
+$$
+V_{\text{antenna}}^2 \approx a\rho^2 + b\rho + c
+$$
+
+This polynomial relationship should therefore be interpreted as an **empirical calibration model specific to the measurement setup**, rather than a fundamental physical law.
+
+The coefficients of this regression are dependent on the SDR hardware, receiver gain settings, center frequency, and bandwidth. Changing any of these parameters requires recalibrating the mapping function.
+
+**END VERY IMPORTANT DISCLAIMER**
+___
+
+For the specific hardware configuration used in this experiment, the collected data points are empirically well approximated by a quadratic regression
 $$
 {\hat{V}_\text{antenna}}^2 = (3.19 \cdot 10^{-3}) \rho^2 - (3.4 \cdot 10^{-3}) \rho + 4.28 \cdot 10^{-3} \\
 \\
@@ -141,4 +161,5 @@ $$
 ![alt text](image-1.png)
 
 #### Pitfall
-Because of the regression that is based on real-world observation, the graph does not agree completely with theoretical models. For example, in the setup above, a global maxima occurs at $\rho \approx 0.53292$ even though the graph should extend to infinity. Theoretically, $\lim_{\rho \rightarrow 0^+} r(\rho) = \infin$ but $\hat{r}(\rho)$ does not behave the same way. This method of estimation should be used with consideration and complemented by safeguards, given the limitation explained above.
+
+Because of the regression that is based on real-world observation, the graph does not agree completely with theoretical models. For example, in the setup above, a finite maximum occurs at $\rho \approx 0.53292$ even though the graph should extend to infinity. Theoretically, $\lim_{\rho \rightarrow 0^+} r(\rho) = \infin$ but $\hat{r}(\rho)$ does not behave the same way. This method of estimation should be used with consideration and complemented by safeguards, given the limitation explained above.
