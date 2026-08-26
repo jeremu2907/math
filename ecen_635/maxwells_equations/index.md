@@ -29,7 +29,7 @@ $\mathcal{I}_d$ = displacement electric current density $(A/m^2)$. If there is a
 $\mathcal{M}_i$ = source magnetic current density $(V/m^2)$
 $\mathcal{M}_d$ = displacement magnetic current density $(V/m^2)$
 $\mathcal{q}_{ev}$ = electric charge density $(C/m^3)$
-$\mathcal{q}_{mv}$ = electric field intensity $(Wb/m^3)$
+$\mathcal{q}_{mv}$ = magnetic charge density $(Wb/m^3)$
 
 ### Integral Form
 $$
