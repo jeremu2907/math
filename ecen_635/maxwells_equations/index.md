@@ -1,3 +1,5 @@
+# Time-Varying and Time-Harmonic EM Fields
+
 ## Maxwell's Equations
 
 ### Differential Form
@@ -53,3 +55,36 @@ $$
 
 $\mathcal{Q}_e$ = total electric charge
 $\mathcal{Q}_m$ = total magnetic charge
+
+## Constitutinve Params and Relations
+
+Materials are made up of charges that interract with the EM field, thus changes the propagation behaviour of the fields, unlike in free space.
+
+### Constitutive Params
+
+$\hat \epsilon$ = permittivity of the medium $(F/m)$ as a function of time
+$\hat \mu$ = permeability of the medium $(H/m)$ as a function of time
+$\hat \sigma$ = conductivity of the medium $(S/m)$ as a function of time
+
+### Constitutive Relations
+
+$$
+\begin{aligned}
+
+\mathcal{D} &= \hat \epsilon * \mathcal{E} \\\\
+
+\mathcal{B} &= \hat \mu * \mathcal{H} \\\\
+
+\mathcal{I}_c &= \hat \sigma * \mathcal{E}
+
+\end{aligned}
+$$
+
+## Boundary Conditions
+
+- Maxwell's eqns in differential form solve or fields and their derivatives in continuous and bounded spaces.
+- At discontinuity, the derivative of the field has no meaning. Therefore we must analyze the fields themselves, not their derivatives, using Maxwell's eqns in integral form. 
+- Interfaces between mediums considered discontinuities, thus to analyze field behaviors at interfaces we use Maxwell's eqn integral form.
+- An example is cell signal through walls.
+
+### Finite Conductivity Media
