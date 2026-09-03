@@ -21,17 +21,17 @@ $$
 $$
 
 The field quantities above are time-varying and is a function of space and time, ie $\mathcal{E} = \mathcal{E}(x,y,z;t)$
-$\mathcal{E}$ = electric field intensity $(V/m)$
-$\mathcal{H}$ = magnetic field intensity $(A/m)$
-$\mathcal{D}$ = electric flux density $(C/m^2)$
-$\mathcal{B}$ = magnetic flux density $(Wb/m^2)$
-$\mathcal{I}_i$ = source electric current density $(A/m^2)$
-$\mathcal{I}_c$ = conduction electric current density $(A/m^2)$
-$\mathcal{I}_d$ = displacement electric current density $(A/m^2)$. If there is a changing electric field that causes a magnetic field (similar to that of a charging capacitor), then the equivalent electric current that causes the same magnetic field is the *displacement electric current*.
-$\mathcal{M}_i$ = source magnetic current density $(V/m^2)$
-$\mathcal{M}_d$ = displacement magnetic current density $(V/m^2)$
-$\mathcal{q}_{ev}$ = electric charge density $(C/m^3)$
-$\mathcal{q}_{mv}$ = magnetic charge density $(Wb/m^3)$
+- $\mathcal{E}$ = electric field intensity $(V/m)$
+- $\mathcal{H}$ = magnetic field intensity $(A/m)$
+- $\mathcal{D}$ = electric flux density $(C/m^2)$
+- $\mathcal{B}$ = magnetic flux density $(Wb/m^2)$
+- $\mathcal{I}_i$ = source electric current density $(A/m^2)$
+- $\mathcal{I}_c$ = conduction electric current density $(A/m^2)$
+- $\mathcal{I}_d$ = displacement electric current density $(A/m^2)$. If there is a changing electric field that causes a magnetic field (similar to that of a charging capacitor), then the equivalent electric current that causes the same magnetic field is the *displacement electric current*.
+- $\mathcal{M}_i$ = source magnetic current density $(V/m^2)$
+- $\mathcal{M}_d$ = displacement magnetic current density $(V/m^2)$
+- $\mathcal{q}_{ev}$ = electric charge density $(C/m^3)$
+- $\mathcal{q}_{mv}$ = magnetic charge density $(Wb/m^3)$
 
 ### Integral Form
 $$
@@ -62,9 +62,9 @@ Materials are made up of charges that interract with the EM field, thus changes 
 
 ### Constitutive Params
 
-$\hat \epsilon$ = permittivity of the medium $(F/m)$ as a function of time
-$\hat \mu$ = permeability of the medium $(H/m)$ as a function of time
-$\hat \sigma$ = conductivity of the medium $(S/m)$ as a function of time
+- $\hat \epsilon$ = permittivity of the medium $(F/m)$ as a function of time
+- $\hat \mu$ = permeability of the medium $(H/m)$ as a function of time
+- $\hat \sigma$ = conductivity of the medium $(S/m)$ as a function of time
 
 ### Constitutive Relations
 
@@ -88,3 +88,27 @@ $$
 - An example is cell signal through walls.
 
 ### Finite Conductivity Media
+
+Assume no E/M surface charges, at the interface between medias:
+- The tangential $\mathcal{E}_x$ is continuous.
+- The tangential $\mathcal{H}_x$ is continuous.
+- The normal $\mathcal{D}_y$ is continuous.
+- The normal $\mathcal{E}_y$ is discontinuous.
+- The normal $\mathcal{B}_y$ is continuous.
+- The normal $\mathcal{H}_y$ is discontinuous.
+
+### Infinite Conductivity Media
+
+## Time-Harmonic Fields
+$$
+\begin{aligned}
+
+\mathcal{E}(x, y, z, t) &= \operatorname{Re}[\bold{E}(x, y, z) e^{j \omega t}] \\\\
+\mathcal{H}(x, y, z, t) &= \operatorname{Re}[\bold{H}(x, y, z) e^{j \omega t}] \\\\
+\mathcal{D}(x, y, z, t) &= \operatorname{Re}[\bold{D}(x, y, z) e^{j \omega t}] \\\\
+\mathcal{B}(x, y, z, t) &= \operatorname{Re}[\bold{B}(x, y, z) e^{j \omega t}] \\\\
+\mathcal{J}(x, y, z, t) &= \operatorname{Re}[\bold{J}(x, y, z) e^{j \omega t}] \\\\
+\mathcal{q}(x, y, z, t) &= \operatorname{Re}[q(x, y, z) e^{j \omega t}] \\\\
+
+\end{aligned}
+$$
