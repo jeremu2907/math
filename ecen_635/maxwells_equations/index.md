@@ -1,6 +1,6 @@
 # Time-Varying and Time-Harmonic EM Fields
 
-## Maxwell's Equations
+## 1. Maxwell's Equations
 
 ### Differential Form
 $$
@@ -56,7 +56,7 @@ $$
 $\mathcal{Q}_e$ = total electric charge
 $\mathcal{Q}_m$ = total magnetic charge
 
-## Constitutinve Params and Relations
+## 2. Constitutinve Params and Relations
 
 Materials are made up of charges that interract with the EM field, thus changes the propagation behaviour of the fields, unlike in free space.
 
@@ -80,7 +80,7 @@ $$
 \end{aligned}
 $$
 
-## Boundary Conditions
+## 3. Boundary Conditions
 
 - Maxwell's eqns in differential form solve or fields and their derivatives in continuous and bounded spaces.
 - At discontinuity, the derivative of the field has no meaning. Therefore we must analyze the fields themselves, not their derivatives, using Maxwell's eqns in integral form. 
@@ -97,9 +97,39 @@ Assume no E/M surface charges, at the interface between medias:
 - The normal $\mathcal{B}_y$ is continuous.
 - The normal $\mathcal{H}_y$ is discontinuous.
 
-### Infinite Conductivity Media
+## 4. Power and Energy
 
-## Time-Harmonic Fields
+We want a way to quantify the EM fields through space. To do this we want 
+
+### Conservation of Energy
+- Assume a volume $V$ enclosed in a surface $S$, the following equations are **conservation of energy** in integral and differential forms.
+
+$$
+\begin{aligned}
+\oiint_S{(\mathcal{E} \times \mathcal{H}) \cdot d\bold{s}} + \iiint_V{[\mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{I}_i + \mathcal{I}_c + \mathcal{I}_d)]dv} &= 0 \\\\
+
+\nabla \cdot (\mathcal{E} \times \mathcal{H}) + \mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{I}_i + \mathcal{I}_c + \mathcal{I}_d) &= 0
+\end{aligned}
+$$
+
+### Poynting Vector
+- The **Poynting Vector** $(W/m^2)$ is defined in the first integrand, which is:
+
+$$
+\mathcal{S} = \mathcal{E} \times \mathcal{H}
+$$
+
+### Conservation of Power
+- $\mathcal{P}_e = \oiint_S{\mathcal{S} \cdot d\bold{s}}$: the total power exiting the volume $V$ $(W)$
+- $\mathcal{P}_d = \iiint_V{\sigma \mathcal{E}^2dv}$: the total dissipated within the volume $V$ $(W)$
+- $\mathcal{W}_e$ is the total electric energy $(J)$
+- $\mathcal{W}_m$ is the total magnetic energy $(J)$
+- $\mathcal{P}_s$: the total supplied power $(W)$ such that:
+$$
+\mathcal{P}_s = \mathcal{P}_e + \mathcal{P}_d + \frac{\partial}{\partial t}(\mathcal{W}_e + \mathcal{W}_m)
+$$
+
+## 5. Time-Harmonic Fields
 $$
 \begin{aligned}
 
