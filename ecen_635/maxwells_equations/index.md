@@ -130,6 +130,11 @@ $$
 $$
 
 ## 5. Time-Harmonic Fields
+
+We want to represent our vector fields in a frequency domain. We can extract the amplitude of our sinusoid signal per frequency. The frequency lies in the domain and the corresponding amplitude lies in the codomain. This representation of vector fields allow simpler operations.
+
+### Frequency Domain
+
 $$
 \begin{aligned}
 
@@ -138,7 +143,13 @@ $$
 \mathcal{D}(x, y, z, t) &= \operatorname{Re}[\bold{D}(x, y, z) e^{j \omega t}] \\\\
 \mathcal{B}(x, y, z, t) &= \operatorname{Re}[\bold{B}(x, y, z) e^{j \omega t}] \\\\
 \mathcal{J}(x, y, z, t) &= \operatorname{Re}[\bold{J}(x, y, z) e^{j \omega t}] \\\\
-\mathcal{q}(x, y, z, t) &= \operatorname{Re}[q(x, y, z) e^{j \omega t}] \\\\
+\mathcal{q}(x, y, z, t) &= \operatorname{Re}[\bold{q}(x, y, z) e^{j \omega t}] \\\\
 
 \end{aligned}
 $$
+
+### Poynting Vector
+$$
+\mathcal{S}_{av} = \bold{S} = \frac{1}{2}\operatorname{Re}[\bold{E} \times \bold{H}^*]
+$$
+$^*$ denotes the complex conjugate of a complex number
