@@ -10,10 +10,10 @@ $$
 &= - \mathcal{M}_i - \mathcal{M}_d \\
 &= - \mathcal{M}_t \\\\
 
-\nabla \times \mathcal{H} &= \mathcal{I}_i + \mathcal{I}_c + \frac{\partial\mathcal{D}}{\partial t} \\
-&=\mathcal{I}_{ic} + \frac{\partial\mathcal{D}}{\partial t} \\
-&=\mathcal{I}_{ic} + \mathcal{I}_{d} \\
-&=\mathcal{I}_{t} \\\\
+\nabla \times \mathcal{H} &= \mathcal{J}_i + \mathcal{J}_c + \frac{\partial\mathcal{D}}{\partial t} \\
+&=\mathcal{J}_{ic} + \frac{\partial\mathcal{D}}{\partial t} \\
+&=\mathcal{J}_{ic} + \mathcal{J}_{d} \\
+&=\mathcal{J}_{t} \\\\
 
 \nabla \cdot \mathcal{D} &= q_{ev} \\\\
 \nabla \cdot \mathcal{B} &= q_{mv}
@@ -25,9 +25,9 @@ The field quantities above are time-varying and is a function of space and time,
 - $\mathcal{H}$ = magnetic field intensity $(A/m)$
 - $\mathcal{D}$ = electric flux density $(C/m^2)$
 - $\mathcal{B}$ = magnetic flux density $(Wb/m^2)$
-- $\mathcal{I}_i$ = source electric current density $(A/m^2)$
-- $\mathcal{I}_c$ = conduction electric current density $(A/m^2)$
-- $\mathcal{I}_d$ = displacement electric current density $(A/m^2)$. If there is a changing electric field that causes a magnetic field (similar to that of a charging capacitor), then the equivalent electric current that causes the same magnetic field is the *displacement electric current*.
+- $\mathcal{J}_i$ = source electric current density $(A/m^2)$
+- $\mathcal{J}_c$ = conduction electric current density $(A/m^2)$
+- $\mathcal{J}_d$ = displacement electric current density $(A/m^2)$. If there is a changing electric field that causes a magnetic field (similar to that of a charging capacitor), then the equivalent electric current that causes the same magnetic field is the *displacement electric current*.
 - $\mathcal{M}_i$ = source magnetic current density $(V/m^2)$
 - $\mathcal{M}_d$ = displacement magnetic current density $(V/m^2)$
 - $\mathcal{q}_{ev}$ = electric charge density $(C/m^3)$
@@ -39,15 +39,15 @@ $$
 
 \oint_C{\mathcal{E} \cdot dl} &= - \iint_S{\mathcal{M}_i \cdot d\mathcal{s}} - \frac{\partial}{\partial t}\iint_S{\mathcal{B}d\mathcal{s}} \\\\
 
-\oint_C{\mathcal{H} \cdot dl} &= \iint_S{\mathcal{I}_{ic} \cdot d\mathcal{s}} + \frac{\partial}{\partial t}\iint_S{\mathcal{D} \cdot d\mathcal{s}} \\
-&= \iint_S{\mathcal{I}_{ic} \cdot d\mathcal{s}} + \iint_S{\mathcal{I}_d \cdot d\mathcal{s}} \\\\
+\oint_C{\mathcal{H} \cdot dl} &= \iint_S{\mathcal{J}_{ic} \cdot d\mathcal{s}} + \frac{\partial}{\partial t}\iint_S{\mathcal{D} \cdot d\mathcal{s}} \\
+&= \iint_S{\mathcal{J}_{ic} \cdot d\mathcal{s}} + \iint_S{\mathcal{J}_d \cdot d\mathcal{s}} \\\\
 
 \iiint_V{\nabla \cdot \mathcal{D} dv} &= \iiint_V{q_{ev}dv}\\
 &= \mathcal{Q}_e \\\\
 
 \oiint_S{\mathcal{B} \cdot d\mathcal{s}} &= \mathcal{Q}_m \\\\
 
-\oiint_S{\mathcal{I}_{ic} \cdot d\mathcal{s}} &= -\frac{\partial}{\partial t}\iiint_V{q_{ev}dv}\\
+\oiint_S{\mathcal{J}_{ic} \cdot d\mathcal{s}} &= -\frac{\partial}{\partial t}\iiint_V{q_{ev}dv}\\
 &= -\frac{\partial\mathcal{Q}_e}{\partial t}
 
 \end{aligned}
@@ -75,7 +75,7 @@ $$
 
 \mathcal{B} &= \hat \mu * \mathcal{H} \\\\
 
-\mathcal{I}_c &= \hat \sigma * \mathcal{E}
+\mathcal{J}_c &= \hat \sigma * \mathcal{E}
 
 \end{aligned}
 $$
@@ -106,9 +106,9 @@ We want a way to quantify the EM fields through space. To do this we want
 
 $$
 \begin{aligned}
-\oiint_S{(\mathcal{E} \times \mathcal{H}) \cdot d\bold{s}} + \iiint_V{[\mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{I}_i + \mathcal{I}_c + \mathcal{I}_d)]dv} &= 0 \\\\
+\oiint_S{(\mathcal{E} \times \mathcal{H}) \cdot d\bold{s}} + \iiint_V{[\mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{J}_i + \mathcal{J}_c + \mathcal{J}_d)]dv} &= 0 \\\\
 
-\nabla \cdot (\mathcal{E} \times \mathcal{H}) + \mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{I}_i + \mathcal{I}_c + \mathcal{I}_d) &= 0
+\nabla \cdot (\mathcal{E} \times \mathcal{H}) + \mathcal{H} \cdot (\mathcal{M}_i + \mathcal{M}_d) + \mathcal{E} \cdot (\mathcal{J}_i + \mathcal{J}_c + \mathcal{J}_d) &= 0
 \end{aligned}
 $$
 
@@ -131,7 +131,7 @@ $$
 
 ## 5. Time-Harmonic Fields
 
-We want to represent our vector fields in a frequency domain. We can extract the amplitude of our sinusoid signal per frequency. The frequency lies in the domain and the corresponding amplitude lies in the codomain. This representation of vector fields allow simpler operations.
+We want to represent our vector fields in a frequency domain. We can extract the amplitude of our sinusoid signal per frequency. The frequencies lies in the domain and the corresponding amplitudes lies in the codomain. This representation of vector fields allow simpler operations.
 
 ### Frequency Domain
 
@@ -145,6 +145,23 @@ $$
 \mathcal{J}(x, y, z, t) &= \operatorname{Re}[\bold{J}(x, y, z) e^{j \omega t}] \\\\
 \mathcal{q}(x, y, z, t) &= \operatorname{Re}[\bold{q}(x, y, z) e^{j \omega t}] \\\\
 
+\end{aligned}
+$$
+
+### Maxwell's Equations
+- Maxwell's equation in the frequency domain is the same as in [#1](#1-maxwells-equations)
+- However because we are taking the time-derivative of $e^{j\omega t}$, the equations can be reduced to:
+
+$$
+\begin{aligned}
+
+\nabla \times \bold{E} &= -\bold{M}_i - j \omega \bold{B} \\\\
+
+\nabla \times \bold{H} &= \bold{J}_i + \bold{J}_c + j \omega \bold{D} \\\\
+
+\nabla \cdot \bold{D} &= q_{ev} \\\\
+
+\nabla \cdot \bold{B} &= q_{mv}
 \end{aligned}
 $$
 
