@@ -40,3 +40,6 @@ $$
     - *Ionic / Molecular Polarization* is present in materials with (-) and (+) ions. The ion bonds are displaced in opposite directions when a field is applied.
     - *Electronic Polarization* is present in most materials. The electron cloud is displaced relative to the nucleus when a field is applied.
 - More than one type of polarization can occur at the same time.
+- *Nonpolar* materials have $\bold{p}_t = \bold{P} = 0$ when no electric field is applied and have non net zero polarization when an electric field is present.
+- *Polar* materials have charges arranged to have individual dipoles with $d\bold{p}_i$, but $\bold{p}_t = \bold{P} = 0$ when no electric field is applied.
+- *Electrets* are materials with non zero net dipole moment and polarization vector when no electric field is applied.
